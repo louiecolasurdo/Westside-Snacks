@@ -1,21 +1,21 @@
 // Edit this list any time the schedule changes.
-// "field" is a placeholder — update with the real field/park name for each game.
 export type Game = {
   id: string; // stable id used as the Redis key — don't change once parents start signing up
   number: number;
   date: string; // display string
+  time: string; // display string
   field: string;
 };
 
 export const SEASON_LABEL = "Fall 2026 — 1st Grade";
 
 export const games: Game[] = [
-  { id: "g1", number: 1, date: "Sat, Sep 12, 2026", field: "Fir Grove" },
-  { id: "g2", number: 2, date: "Sat, Sep 19, 2026", field: "Fir Grove" },
-  { id: "g3", number: 3, date: "Sat, Sep 26, 2026", field: "Fir Grove" },
-  { id: "g4", number: 4, date: "Sat, Oct 3, 2026", field: "Fir Grove" },
-  { id: "g5", number: 5, date: "Sat, Oct 10, 2026", field: "Fir Grove" },
-  { id: "g6", number: 6, date: "Sat, Oct 17, 2026", field: "Fir Grove" },
-  { id: "g7", number: 7, date: "Sat, Oct 24, 2026", field: "Fir Grove" },
-  { id: "g8", number: 8, date: "Sat, Oct 31, 2026", field: "Fir Grove" },
+  { id: "g1", number: 1, date: "Sat, Sep 12, 2026", time: "2:30 PM", field: "Fir Grove Field 5" },
+  { id: "g2", number: 2, date: "Sat, Sep 19, 2026", time: "3:30 PM", field: "Fir Grove Field 5" },
+  { id: "g3", number: 3, date: "Sat, Sep 26, 2026", time: "1:30 PM", field: "Fir Grove Field 3" },
+  { id: "g4", number: 4, date: "Sat, Oct 3, 2026", time: "2:30 PM", field: "Fir Grove Field 4" },
+  { id: "g5", number: 5, date: "Sat, Oct 10, 2026", time: "2:30 PM", field: "Fir Grove Field 3" },
+  { id: "g6", number: 6, date: "Sat, Oct 17, 2026", time: "1:30 PM", field: "Fir Grove Field 3" },
+  { id: "g7", number: 7, date: "Sat, Oct 24, 2026", time: "3:30 PM", field: "Fir Grove Field 3" },
+  { id: "g8", number: 8, date: "Sat, Oct 31, 2026", time: "4:30 PM", field: "Fir Grove Field 4" },
 ];
