@@ -87,6 +87,7 @@ export default function Home() {
             <tr>
               <th>Game</th>
               <th>Date</th>
+              <th>Time</th>
               <th>Field</th>
               <th>Snack Parent</th>
             </tr>
@@ -99,6 +100,7 @@ export default function Home() {
                 <tr key={g.id}>
                   <td className="game-num">{g.number}</td>
                   <td>{g.date}</td>
+                  <td>{g.time}</td>
                   <td className="field-cell">{g.field}</td>
                   <td>
                     {loading ? (
