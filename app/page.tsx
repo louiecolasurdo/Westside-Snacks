@@ -75,8 +75,7 @@ export default function Home() {
 
       <div className="intro">
         Thanks for volunteering! Click <strong>Sign Up</strong> next to an
-        open game to bring snacks (and drinks) for the team after that
-        game. One family per game — the list updates live for everyone.
+        open game to bring snacks for the team after that game.
       </div>
 
       {error && <div className="error-banner">{error}</div>}
